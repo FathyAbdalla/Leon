@@ -10,7 +10,10 @@
           <div class="image">
             <img src="../images/Web.png" alt="" />
           </div>
-          <h3>Project Here</h3>
+          <router-link :to="{ name: 'portfolioDetails', params: { id: 1 } }">
+            <h3>Project Here</h3>
+          </router-link>
+
           <p>
             My creative ability is very difficult to measure because it can manifest in so many
             surprising and.
@@ -23,7 +26,9 @@
               alt=""
             />
           </div>
-          <h3>Project Here</h3>
+          <router-link :to="{ name: 'portfolioDetails', params: { id: 2 } }">
+            <h3>Project Here</h3>
+          </router-link>
           <p>
             My creative ability is very difficult to measure because it can manifest in so many
             surprising and.
@@ -33,13 +38,16 @@
           <div class="image">
             <img src="../images/web-1045994_640.jpg" alt="" />
           </div>
-          <h3>Project Here</h3>
+          <router-link :to="{ name: 'portfolioDetails', params: { id: 3 } }">
+            <h3>Project Here</h3>
+          </router-link>
           <p>
             My creative ability is very difficult to measure because it can manifest in so many
             surprising and.
           </p>
         </div>
       </div>
+      <router-view />
     </div>
   </div>
 </template>
@@ -90,5 +98,11 @@ export default {
 .portfolio .container .content .image img {
   width: 100%;
   height: 100%;
+}
+a {
+  text-decoration: none;
+}
+a h3 {
+  color: black;
 }
 </style>

@@ -9,8 +9,10 @@
         <p>Feel free to drop us a line at:</p>
         <p>leonagency@mail.com</p>
         <p>
-          Find us on social networks: <i class="fa-brands fa-dribbble"></i>
-          <i class="fa-brands fa-google-plus-g"></i> <i class="fa-brands fa-twitter"></i>
+          Find us on social networks:
+          <a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://x.com/" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
         </p>
       </div>
     </div>
@@ -73,5 +75,9 @@ export default {
   .contact .container .content p:nth-child(3) {
     margin-left: -20px !important;
   }
+}
+
+a {
+  color: black;
 }
 </style>

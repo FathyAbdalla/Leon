@@ -1,11 +1,9 @@
 <template>
-  <div class="footer">&copy; 2019-<span>Leon</span>,All Right Reserved</div>
+  <div class="footer">&copy; {{ date }}-<span>Leon</span>,All Right Reserved</div>
 </template>
 
-<script>
-export default {
-  name: 'Footer',
-}
+<script setup>
+const date = new Date().getFullYear()
 </script>
 
 <style>
